@@ -16,24 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVj-id-rzn">
-                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bgD-Aj-fLb">
+                                <rect key="frame" x="20" y="99" width="353" height="120"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9M-08-H55" customClass="CustomTextField" customModule="TopMovies" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="48B-o4-Hlg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YyR-eL-9kT" customClass="CustomTextField" customModule="TopMovies" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="353" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2iM-BL-IFj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oVj-id-rzn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IB2-4Z-SYC"/>
-                            <constraint firstItem="oVj-id-rzn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ScU-1N-hgv"/>
+                            <constraint firstItem="bgD-Aj-fLb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="9FO-5z-MBP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bgD-Aj-fLb" secondAttribute="trailing" constant="20" id="Tyf-eW-Qii"/>
+                            <constraint firstItem="bgD-Aj-fLb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wUL-ZK-OnM"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="-34"/>
+            <point key="canvasLocation" x="75.572519083969468" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>

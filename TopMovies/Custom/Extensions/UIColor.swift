@@ -28,6 +28,4 @@ extension UIColor {
     static var lynx_white: UIColor {
         return UIColor(named: "lynx_white") ?? UIColor.white
     }
-    
-  
 }

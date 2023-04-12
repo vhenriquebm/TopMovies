@@ -20,6 +20,9 @@
 		42336BAF29E71666009C7455 /* TopMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42336BAE29E71666009C7455 /* TopMoviesTests.swift */; };
 		42336BB929E71666009C7455 /* TopMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42336BB829E71666009C7455 /* TopMoviesUITests.swift */; };
 		42336BBB29E71666009C7455 /* TopMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42336BBA29E71666009C7455 /* TopMoviesUITestsLaunchTests.swift */; };
+		42B0540529E743E700FA7608 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0540429E743E700FA7608 /* BaseViewController.swift */; };
+		42B0540729E7469700FA7608 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0540629E7469700FA7608 /* CustomTextField.swift */; };
+		42B0540929E746A100FA7608 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B0540829E746A100FA7608 /* CustomTextField.xib */; };
 		A8579FACA8DF17FFF8319128 /* Pods_TopMovies_TopMoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A1AD51AB7DFC39FF253FA6 /* Pods_TopMovies_TopMoviesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		42336BB429E71666009C7455 /* TopMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42336BB829E71666009C7455 /* TopMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesUITests.swift; sourceTree = "<group>"; };
 		42336BBA29E71666009C7455 /* TopMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		42B0540429E743E700FA7608 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		42B0540629E7469700FA7608 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		42B0540829E746A100FA7608 /* CustomTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
 		5023E12A77FB62E78CDFB226 /* Pods_TopMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F9F092EDC428C863AED6A9 /* Pods-TopMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopMovies.release.xcconfig"; path = "Target Support Files/Pods-TopMovies/Pods-TopMovies.release.xcconfig"; sourceTree = "<group>"; };
 		916AF6CD7575A96A3F3C07B1 /* Pods-TopMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopMovies.debug.xcconfig"; path = "Target Support Files/Pods-TopMovies/Pods-TopMovies.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 		420751DC29E71974001EBB1D /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				42B0540629E7469700FA7608 /* CustomTextField.swift */,
+				42B0540829E746A100FA7608 /* CustomTextField.xib */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 		42336B9629E71664009C7455 /* TopMovies */ = {
 			isa = PBXGroup;
 			children = (
+				42B0540229E743D200FA7608 /* Commons */,
 				420751DA29E71967001EBB1D /* Custom */,
 				42336BC729E71677009C7455 /* Scenes */,
 				42336B9729E71664009C7455 /* AppDelegate.swift */,
@@ -262,6 +271,22 @@
 			children = (
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		42B0540229E743D200FA7608 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				42B0540329E743DA00FA7608 /* Bases */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		42B0540329E743DA00FA7608 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				42B0540429E743E700FA7608 /* BaseViewController.swift */,
+			);
+			path = Bases;
 			sourceTree = "<group>";
 		};
 		85B7DD088FFE02D79A2BF144 /* Frameworks */ = {
@@ -396,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B0540929E746A100FA7608 /* CustomTextField.xib in Resources */,
 				42336BA429E71666009C7455 /* LaunchScreen.storyboard in Resources */,
 				42336BA129E71666009C7455 /* Assets.xcassets in Resources */,
 				42336B9F29E71664009C7455 /* Login.storyboard in Resources */,
@@ -526,11 +552,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B0540729E7469700FA7608 /* CustomTextField.swift in Sources */,
 				42336B9C29E71664009C7455 /* LoginViewController.swift in Sources */,
 				420751DE29E71989001EBB1D /* UIColor.swift in Sources */,
 				42336B9829E71664009C7455 /* AppDelegate.swift in Sources */,
 				420751E029E71DC1001EBB1D /* UIFont.swift in Sources */,
 				42336B9A29E71664009C7455 /* SceneDelegate.swift in Sources */,
+				42B0540529E743E700FA7608 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,17 +6,22 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureUi()
     }
     
-    private func configureUi(){
-        self.view.backgroundColor = 
-        
+    override func configureBindings() {
+      
+    }
+    
+    override func configureView(){
+        self.view.backgroundColor = .electromagnetic
+
 
     }
 }
