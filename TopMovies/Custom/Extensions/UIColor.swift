@@ -10,18 +10,24 @@ import UIKit
 extension UIColor {
     
     static var electromagnetic: UIColor {
-        return UIColor(red: 47/255, green: 54/255, blue: 64/255, alpha: 1)
+        return UIColor(named: "electromagnetic") ?? UIColor.white
     }
     
     static var blue_night: UIColor {
-        return UIColor(red: 53/255, green:  59/255, blue: 72/255, alpha: 1)
+        return UIColor(named: "blue_night") ?? UIColor.white
     }
     
     static var harley_davidson_orange: UIColor {
-        return UIColor(red: 194/255, green:  54/255, blue: 22/255, alpha: 1)
+        return UIColor(named: "harley_davidson_orange") ?? UIColor.white
     }
     
     static var blueberry_soda: UIColor {
-        return UIColor(red: 127, green: 143, blue: 166, alpha: 1)
+        return UIColor(named: "blueberry_soda") ?? UIColor.white
     }
+    
+    static var lynx_white: UIColor {
+        return UIColor(named: "lynx_white") ?? UIColor.white
+    }
+    
+  
 }

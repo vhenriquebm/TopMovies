@@ -10,6 +10,7 @@
 		2DF8F8FC4F2B29F79E758633 /* Pods_TopMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA92B6CEE0A5A4001CDFE8D6 /* Pods_TopMovies.framework */; };
 		3DD73533D6C9B77C872EC257 /* Pods_TopMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5023E12A77FB62E78CDFB226 /* Pods_TopMoviesTests.framework */; };
 		420751DE29E71989001EBB1D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420751DD29E71989001EBB1D /* UIColor.swift */; };
+		420751E029E71DC1001EBB1D /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420751DF29E71DC0001EBB1D /* UIFont.swift */; };
 		42336B9829E71664009C7455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42336B9729E71664009C7455 /* AppDelegate.swift */; };
 		42336B9A29E71664009C7455 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42336B9929E71664009C7455 /* SceneDelegate.swift */; };
 		42336B9C29E71664009C7455 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42336B9B29E71664009C7455 /* LoginViewController.swift */; };
@@ -41,6 +42,12 @@
 
 /* Begin PBXFileReference section */
 		420751DD29E71989001EBB1D /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		420751DF29E71DC0001EBB1D /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		420751E229E71FC6001EBB1D /* OpenSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Medium.ttf"; sourceTree = "<group>"; };
+		420751E329E71FC6001EBB1D /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		420751E429E71FC6001EBB1D /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		420751E529E71FC6001EBB1D /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		420751E629E71FC6001EBB1D /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		42336B9429E71664009C7455 /* TopMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42336B9729E71664009C7455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42336B9929E71664009C7455 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +103,7 @@
 		420751DA29E71967001EBB1D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				420751E129E71F9E001EBB1D /* Fonts */,
 				420751DC29E71974001EBB1D /* Custom Views */,
 				420751DB29E7196E001EBB1D /* Extensions */,
 			);
@@ -106,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				420751DD29E71989001EBB1D /* UIColor.swift */,
+				420751DF29E71DC0001EBB1D /* UIFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -115,6 +124,18 @@
 			children = (
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		420751E129E71F9E001EBB1D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				420751E529E71FC6001EBB1D /* OpenSans-Bold.ttf */,
+				420751E329E71FC6001EBB1D /* OpenSans-Light.ttf */,
+				420751E229E71FC6001EBB1D /* OpenSans-Medium.ttf */,
+				420751E629E71FC6001EBB1D /* OpenSans-Regular.ttf */,
+				420751E429E71FC6001EBB1D /* OpenSans-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		42336B8B29E71664009C7455 = {
@@ -508,6 +529,7 @@
 				42336B9C29E71664009C7455 /* LoginViewController.swift in Sources */,
 				420751DE29E71989001EBB1D /* UIColor.swift in Sources */,
 				42336B9829E71664009C7455 /* AppDelegate.swift in Sources */,
+				420751E029E71DC1001EBB1D /* UIFont.swift in Sources */,
 				42336B9A29E71664009C7455 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

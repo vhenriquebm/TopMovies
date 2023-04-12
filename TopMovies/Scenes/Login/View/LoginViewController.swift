@@ -15,7 +15,8 @@ class LoginViewController: UIViewController {
     }
     
     private func configureUi(){
-        self.view.backgroundColor = .electromagnetic
+        self.view.backgroundColor = 
+        
 
     }
 }
